@@ -1,0 +1,137 @@
+/* General Page Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #0f172a, #1e3a5f);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+/* Main Heading */
+h1 {
+    font-size: 36px;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+/* Input Container */
+.container {
+    background-color: white;
+    color: #1e293b;
+    width: 100%;
+    max-width: 550px;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Section Heading */
+.container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #1e3a5f;
+}
+
+/* Labels */
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Input Fields */
+input {
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 25px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+/* Calculate Button */
+button {
+    width: 100%;
+    padding: 14px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+/* Results Section */
+.results-container {
+    max-width: 900px;
+    margin-top: 35px;
+    overflow-x: auto;
+}
+
+.summary {
+    background-color: #eff6ff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.summary p {
+    font-size: 17px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.summary span {
+    color: #2563eb;
+}
+
+/* Results Headings */
+.results-container h3 {
+    color: #1e3a5f;
+    margin: 25px 0 15px;
+}
+
+/* Iteration Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th {
+    background-color: #1e3a5f;
+    color: white;
+    padding: 14px;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #cbd5e1;
+    color: #334155;
+}
+
+tr:hover {
+    background-color: #eff6ff;
+}
+
+/* Graph Area */
+#graph {
+    width: 100%;
+    min-height: 350px;
+    background-color: #f8fafc;
+    border-radius: 10px;
+    margin-top: 15px;
+}

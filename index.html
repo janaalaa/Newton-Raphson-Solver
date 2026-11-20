@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newton-Raphson Solver</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/14.8.1/math.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+</head>
+
+<body>
+
+    <h1>Newton-Raphson Method</h1>
+
+    <!-- Input Section -->
+    <div class="container">
+
+        <h2>Enter Your Equation</h2>
+
+        <label for="function">Nonlinear Function f(x):</label>
+        <input
+            type="text"
+            id="function"
+            placeholder="Example: x^3 - 8*x + 5"
+        >
+
+        <label for="initialGuess">Initial Guess (X₀):</label>
+        <input
+            type="number"
+            id="initialGuess"
+            placeholder="Enter initial value"
+        >
+
+        <button id="solveBtn">Calculate Root</button>
+
+    </div>
+
+    <!-- Results Section -->
+    <div class="container results-container" id="resultsSection" hidden>
+
+        <h2>Calculation Results</h2>
+
+        <div class="summary">
+
+            <p>Approximate Root: <span id="rootResult">-</span></p>
+
+            <p>Number of Iterations: <span id="iterationCount">-</span></p>
+
+        </div>
+
+        <h3>Iteration Details</h3>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Iteration</th>
+                    <th>X Value</th>
+                    <th>f(X)</th>
+                    <th>f'(X)</th>
+                    <th>Next X</th>
+                </tr>
+            </thead>
+
+            <tbody id="iterationTable">
+                <!-- Iteration results will appear here -->
+            </tbody>
+        </table>
+
+        <h3>Function Graph</h3>
+
+        <div id="graph"></div>
+
+    </div>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
