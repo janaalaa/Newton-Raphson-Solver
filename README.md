@@ -83,8 +83,4 @@ Newton-Raphson-Solver/
 └── README.md
 ```
 
-## Author
 
-**Jana Alaa**
-
-GitHub: [@janaalaa](https://github.com/janaalaa)
